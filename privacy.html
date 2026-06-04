@@ -1,71 +1,96 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Privacy Policy — Daily Funds</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <style>
-        body{
-            margin:0;
-            font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-            padding:24px 20px 40px;
-            max-width:760px;
-            margin-inline:auto;
-        }
-        h1,h2{line-height:1.2}
-        a{color:#2563eb}
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Daily Funds</title>
+  <style>
+    :root { --primary: #3D5A80; --text: #1C1C1E; --muted: #6B7280; --border: #E5E7EB; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #F2F3F5; --muted: #9CA3AF; --border: #2A2B35; }
+      body { background: #0F1014; }
+    }
+    body {
+      margin: 0;
+      font: 16px/1.7 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 14px; font-weight: 600; text-decoration: none; margin-bottom: 32px; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 20px; font-weight: 700; margin: 36px 0 10px; border-top: 1px solid var(--border); padding-top: 28px; }
+    p { color: var(--muted); margin-bottom: 14px; }
+    ul { color: var(--muted); padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--primary); }
+    strong { color: var(--text); }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>Last updated: August 31, 2025</p>
+<div class="wrap">
+  <a class="back" href="index.html">← Back to Daily Funds</a>
 
-<p>Daily Funds is a simple budgeting app designed to help you track your money across budgets, accounts, and categories.</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: June 4, 2026</p>
 
-<h2>Data collection</h2>
-<p>
-    The app does not collect, transmit, or store any personal information on external servers by default.
-    All data (budgets, accounts, categories, transactions, statistics) remain only on your device.
-</p>
+  <p>Daily Funds is a personal budgeting app designed to help you track your money. Your privacy is important to us. This policy explains what data we collect, how we use it, and your choices.</p>
 
-<h2>Cloud backup or sync (if enabled)</h2>
-<p>
-    In future versions, optional cloud backup or synchronization may be offered (for example, through iCloud or another provider).
-    If you choose to enable such a feature, your data may be stored and processed by that service according to their own privacy policy.
-    You will always be able to turn sync off, and this page will be updated with specific details before such features are released.
-</p>
+  <h2>1. Data stored on your device</h2>
+  <p>By default, all financial data — budgets, accounts, categories, transactions, and statistics — is stored <strong>only on your device</strong> and never transmitted to external servers. No account or sign-in is required to use the core features of the App.</p>
 
-<h2>Permissions</h2>
-<ul>
-    <li>
-        <strong>Notifications:</strong> Used only for budget reminders or monthly summaries.  
-        You can disable notifications at any time in the system settings of your device.
-    </li>
-    <li>
-        <strong>File access / storage (optional):</strong> If you export backups or reports,
-        the app writes files to your chosen location. These files stay under your control.
-    </li>
-</ul>
+  <h2>2. Optional cloud sync</h2>
+  <p>If you choose to enable the Sync feature (to share a budget with family or to sync across devices), your data is stored in <strong>Google Firebase</strong> (Firestore). This includes budget names, accounts, categories, and transactions you add while sync is enabled.</p>
+  <ul>
+    <li>Sync requires signing in with Apple or Google.</li>
+    <li>Only the shared budget is stored in the cloud. Personal budgets without sync remain local only.</li>
+    <li>You can disable sync at any time in Settings → Account. After disabling, no new data is sent to the cloud.</li>
+    <li>To request deletion of your cloud data, contact us at <a href="mailto:alex.d.code@icloud.com">alex.d.code@icloud.com</a>.</li>
+  </ul>
+  <p>Firebase is operated by Google LLC. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> for details.</p>
 
-<h2>Third-party services</h2>
-<p>
-    Daily Funds does not use in-app analytics, advertising SDKs, or tracking tools that follow you across other apps or websites.
-</p>
+  <h2>3. In-app purchases</h2>
+  <p>Daily Funds offers optional paid features processed by <strong>Apple App Store</strong> and managed via <strong>RevenueCat</strong>. RevenueCat receives anonymized purchase data (subscription status, device identifier) to manage entitlements. No financial data from your budgets is shared with RevenueCat.</p>
+  <p>See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a> for details.</p>
 
-<h2>Children’s privacy</h2>
-<p>
-    Daily Funds is not specifically directed at children. It is a utility app for general use by adults and families.
-</p>
+  <h2>4. AI-powered transaction input (optional)</h2>
+  <p>If you use the receipt scanning or voice input features, your image or voice audio is sent to a <strong>Google Cloud Function</strong> for processing. The data is used only to extract transaction details and is not stored or used for any other purpose. These features require an active internet connection and are entirely optional.</p>
 
-<h2>Changes to this Policy</h2>
-<p>
-    This Privacy Policy may be updated from time to time. When it changes, the "Last updated" date at the top of this page will be revised.
-</p>
+  <h2>5. Device permissions</h2>
+  <ul>
+    <li><strong>Camera:</strong> Used only when you choose to scan a receipt. Photos are processed for transaction extraction and not stored.</li>
+    <li><strong>Photo Library:</strong> Used only when you choose to select a receipt image. Images are processed for transaction extraction and not stored.</li>
+    <li><strong>Microphone / Speech Recognition:</strong> Used only when you use the voice input feature. Audio is processed by Apple's Speech Recognition and sent to our Cloud Function for transaction parsing. Not stored.</li>
+    <li><strong>Location (approximate, one-time):</strong> Used only during initial onboarding to suggest a default currency. Location is not stored or transmitted.</li>
+    <li><strong>Notifications:</strong> Used for budget reminders and planned purchase alerts. Can be disabled at any time in system settings.</li>
+  </ul>
 
-<h2>Contact</h2>
-<p>
-    If you have any questions about this Privacy Policy, contact us at:
-    <a href="mailto:hyper-ionised1v@icloud.com">hyper-ionised1v@icloud.com</a>
-</p>
+  <h2>6. Analytics and crash reporting</h2>
+  <p>The App uses <strong>Firebase Analytics</strong> to collect anonymized usage statistics (screen views, feature usage frequency). No personally identifiable information or financial data is included in these events. This helps us improve the App.</p>
+  <p>If the App crashes, an anonymized crash report may be sent via <strong>Firebase Crashlytics</strong>. These reports contain technical information (device model, iOS version, stack trace) but no financial data.</p>
+
+  <h2>7. Third-party services summary</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> — Cloud sync (optional), analytics, crash reporting</li>
+    <li><strong>RevenueCat</strong> — In-app purchase management</li>
+    <li><strong>Apple App Store</strong> — App distribution, payment processing</li>
+    <li><strong>Apple Speech Recognition</strong> — Voice input (optional)</li>
+  </ul>
+
+  <h2>8. Children's privacy</h2>
+  <p>Daily Funds is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>9. Data retention and deletion</h2>
+  <p>Local data remains on your device until you delete the App. Cloud sync data is retained until you request deletion. To delete your cloud data, contact us at <a href="mailto:alex.d.code@icloud.com">alex.d.code@icloud.com</a> and we will remove it within 30 days.</p>
+
+  <h2>10. Changes to this Policy</h2>
+  <p>When this policy changes, we update the "Last updated" date. Significant changes will be communicated via an in-app notice.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this Privacy Policy? Contact us at:<br>
+  <a href="mailto:alex.d.code@icloud.com">alex.d.code@icloud.com</a></p>
+</div>
 </body>
 </html>
